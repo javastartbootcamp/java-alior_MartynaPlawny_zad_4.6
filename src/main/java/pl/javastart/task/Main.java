@@ -12,19 +12,21 @@ public class Main {
         do {
             System.out.println("Podaj liczbę wierszy");
             rowsNumber = scanner.nextInt();
-            if (rowsNumber > 100)
+            if (rowsNumber > 100) {
                 System.out.println("Liczba wierszy musi być mniejsza niż 100");
-            else if (rowsNumber < 0)
+            } else if (rowsNumber < 0) {
                 System.out.println("Liczba wierszy musi być większa niż 0");
+            }
         } while (rowsNumber > 100 || rowsNumber < 0);
 
         do {
             System.out.println("Podaj liczbę kolumn");
             columnsNumber = scanner.nextInt();
-            if (columnsNumber > 100)
+            if (columnsNumber > 100) {
                 System.out.println("Liczba kolumn musi być mniejsza niż 100");
-            else if (columnsNumber < 0)
+            } else if (columnsNumber < 0) {
                 System.out.println("Liczba kolumn musi być większa niż 0");
+            }
         } while (columnsNumber > 100 || columnsNumber < 0);
 
         int[][] array = new int[rowsNumber][columnsNumber];
